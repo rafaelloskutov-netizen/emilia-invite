@@ -1,156 +1,44 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-<meta charset="UTF-8">
+<html lang="ru"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Приглашение · Принцесса Эмилия 👑</title>
+<title>Приглашение · Принцесса Эмилия</title>
 <style>
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body {
-    font-family: Georgia, 'Times New Roman', serif;
-    background: linear-gradient(160deg, #ffd9ec 0%, #ffeef6 40%, #fff5e6 100%);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 18px;
-  }
-  .card {
-    max-width: 420px;
-    width: 100%;
-    background: #fffafc;
-    border-radius: 28px;
-    overflow: hidden;
-    box-shadow: 0 14px 50px rgba(214,120,160,0.35);
-    border: 3px solid #ffc6e0;
-  }
-  .hero { position: relative; }
-  .hero video { width: 100%; display: block; background: #ffeef6; }
-  .crown {
-    position: absolute;
-    top: 14px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 36px;
-    z-index: 2;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    animation: float 3s ease-in-out infinite;
-  }
-  @keyframes float {
-    0%, 100% { transform: translateX(-50%) translateY(0); }
-    50% { transform: translateX(-50%) translateY(-6px); }
-  }
-  .body { padding: 26px 28px 32px; text-align: center; }
-  .pre {
-    color: #d36a9a;
-    letter-spacing: 3px;
-    font-size: 11px;
-    text-transform: uppercase;
-    font-family: Arial, sans-serif;
-  }
-  .name {
-    font-size: 38px;
-    color: #c44d86;
-    margin: 8px 0 4px;
-    font-weight: bold;
-    text-shadow: 0 2px 8px rgba(196,77,134,0.2);
-  }
-  .sub {
-    font-size: 15px;
-    color: #8a6d7a;
-    margin-bottom: 20px;
-    font-style: italic;
-  }
-  hr { width: 60px; height: 2px; background: #ffc6e0; margin: 16px auto; border: none; }
-  .info-block { margin: 12px 0; }
-  .lbl {
-    font-size: 11px;
-    color: #b98aa3;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-family: Arial, sans-serif;
-  }
-  .val {
-    font-size: 17px;
-    color: #5b4752;
-    margin-top: 3px;
-    line-height: 1.4;
-  }
-  .emoji-row { font-size: 22px; margin: 4px 0; }
-  .btns { margin-top: 24px; display: flex; flex-direction: column; gap: 14px; }
-  .btn {
-    display: block;
-    text-decoration: none;
-    padding: 16px 18px;
-    border-radius: 18px;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: Georgia, serif;
-    transition: transform .12s, box-shadow .12s;
-  }
-  .btn:active { transform: scale(.97); }
-  .btn-tg {
-    background: linear-gradient(135deg, #ff8fc0, #ff6fae);
-    color: #fff;
-    box-shadow: 0 6px 20px rgba(255,111,174,.45);
-  }
-  .btn-tg:hover { box-shadow: 0 8px 28px rgba(255,111,174,.6); transform: translateY(-2px); }
-  .btn-map {
-    background: linear-gradient(135deg, #ffb347, #ffa0c8);
-    color: #fff;
-    box-shadow: 0 6px 20px rgba(255,160,200,.4);
-  }
-  .btn-map:hover { box-shadow: 0 8px 28px rgba(255,160,200,.6); transform: translateY(-2px); }
-  .footer {
-    margin-top: 22px;
-    font-size: 13px;
-    color: #c490b0;
-    font-style: italic;
-  }
-  .hearts { font-size: 20px; margin-top: 6px; letter-spacing: 4px; }
-</style>
-</head>
-<body>
-<div class="card">
-  <div class="hero">
-    <div class="crown">👑</div>
-    <video autoplay muted loop playsinline>
-      <source src="video.mp4" type="video/mp4">
-    </video>
-  </div>
-  <div class="body">
-    <div class="pre">Вас приглашают</div>
-    <div class="name">Эмилия</div>
-    <div class="sub">Принцессе — 2 месяца 🌸</div>
-
-    <hr>
-
-    <div class="info-block">
-      <div class="emoji-row">📅</div>
-      <div class="lbl">Когда</div>
-      <div class="val">18 июля, 12:00</div>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:Georgia,'Times New Roman',serif;background:linear-gradient(160deg,#ffd9ec,#ffeef6 40%,#fff5e6);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:18px;}
+  .card{max-width:420px;width:100%;background:#fffafc;border-radius:28px;overflow:hidden;box-shadow:0 14px 50px rgba(214,120,160,.35);border:3px solid #ffc6e0;}
+  .hero{position:relative;}.hero img{width:100%;display:block;}
+  .hero .crown{position:absolute;top:14px;left:50%;transform:translateX(-50%);font-size:34px;text-shadow:0 2px 8px rgba(0,0,0,.25);}
+  .body{padding:24px 26px 30px;text-align:center;}
+  .pre{color:#d36a9a;letter-spacing:3px;font-size:12px;text-transform:uppercase;}
+  .name{font-size:34px;color:#c44d86;margin:6px 0 2px;font-weight:bold;}
+  .sub{font-size:16px;color:#8a6d7a;margin-bottom:18px;font-style:italic;}
+  .divider{width:60px;height:2px;background:#ffc6e0;margin:14px auto;border:none;}
+  .row{display:flex;align-items:center;justify-content:center;gap:8px;margin:10px 0;color:#6e5662;}
+  .lbl{font-size:12px;color:#b98aa3;text-transform:uppercase;letter-spacing:1px;display:block;}
+  .place{font-size:16px;color:#5b4752;line-height:1.4;}
+  .btns{margin-top:22px;display:flex;flex-direction:column;gap:12px;}
+  .btn{display:block;text-decoration:none;padding:15px 18px;border-radius:16px;font-size:16px;font-weight:bold;font-family:Georgia,serif;transition:transform .12s;}
+  .btn:active{transform:scale(.97);}
+  .btn-tg{background:linear-gradient(135deg,#ff8fc0,#ff6fae);color:#fff;box-shadow:0 6px 18px rgba(255,111,174,.45);}
+  .btn-map{background:#fff;color:#c44d86;border:2px solid #ffc6e0;}
+  .foot{margin-top:20px;font-size:12px;color:#bb9aab;}
+</style></head><body>
+  <div class="card">
+    <div class="hero"><div class="crown">&#128081;</div>
+      <img src="video.mp4-poster.jpg" alt="Принцесса Эмилия" onerror="this.style.display='none'">
+      <video autoplay muted loop playsinline style="width:100%;display:block;"><source src="video.mp4" type="video/mp4"></video></div>
+    <div class="body">
+      <div class="pre">Приглашение на праздник</div>
+      <div class="name">Принцесса Эмилия</div>
+      <div class="sub">нам исполняется 2 месяца!</div>
+      <hr class="divider">
+      <div class="row"><span>&#128197;</span><div><span class="lbl">Когда</span><span class="place">18 июля</span></div></div>
+      <div class="row"><span>&#128336;</span><div><span class="lbl">Во сколько</span><span class="place">12:00</span></div></div>
+      <div class="row"><span>&#128205;</span><div><span class="lbl">Где</span><span class="place"><a href="https://maps.google.com/maps?q=55.856031,37.026643&ll=55.856031,37.026643&z=16" target="_blank" style="color:#c44d86;">Нажми, чтобы открыть карту</a></span></div></div>
+      <div class="btns">
+        <a class="btn btn-tg" href="https://t.me/emilia_wishlist_2026_bot" target="_blank">&#127873; Открыть вишлист в Telegram</a>
+        <a class="btn btn-map" href="https://maps.google.com/maps?q=55.856031,37.026643&ll=55.856031,37.026643&z=16" target="_blank">&#128205; Открыть место на карте</a>
+      </div>
+      <div class="foot">Будем рады видеть вас на нашем празднике &#10084;&#65039;</div>
     </div>
-
-    <div class="info-block">
-      <div class="emoji-row">📍</div>
-      <div class="lbl">Где</div>
-      <div class="val">Скоро добавим адрес</div>
-    </div>
-
-    <div class="btns">
-      <a class="btn btn-tg" href="https://t.me/emilia_wishlist_2026_bot">
-        🎁 Вишлист подарков
-      </a>
-      <a class="btn btn-map" href="#" id="map-btn">
-        🗺️ Открыть на карте
-      </a>
-    </div>
-
-    <div class="footer">
-      Будем рады видеть вас на нашем празднике
-      <div class="hearts">🌸 💕 🌸</div>
-    </div>
-  </div>
-</div>
-</body>
-</html>
+  </div></body></html>
